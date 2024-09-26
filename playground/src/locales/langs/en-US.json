@@ -79,10 +79,14 @@
         "rules": "Form Rules",
         "dynamic": "Dynamic Form",
         "custom": "Custom Component",
-        "api": "Api"
+        "api": "Api",
+        "merge": "Merge Form"
       },
       "captcha": {
         "title": "Captcha",
+        "pointSelection": "Point Selection Captcha",
+        "sliderCaptcha": "Slider Captcha",
+        "sliderRotateCaptcha": "Rotate Captcha",
         "captchaCardTitle": "Please complete the security verification",
         "pageDescription": "Verify user identity by clicking on specific locations in the image.",
         "pageTitle": "Captcha Component Example",
