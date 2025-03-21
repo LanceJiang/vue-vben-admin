@@ -1,4 +1,6 @@
-import { type DefaultTheme, defineConfig } from 'vitepress';
+import type { DefaultTheme } from 'vitepress';
+
+import { defineConfig } from 'vitepress';
 
 import { version } from '../../../package.json';
 
@@ -124,7 +126,7 @@ function sidebarCommercial(): DefaultTheme.SidebarItem[] {
   return [
     {
       link: 'community',
-      text: '社区',
+      text: '交流群',
     },
     {
       link: 'technical-support',
@@ -150,8 +152,22 @@ function sidebarComponents(): DefaultTheme.SidebarItem[] {
     },
     {
       collapsed: false,
+      text: '布局组件',
+      items: [
+        {
+          link: 'layout-ui/page',
+          text: 'Page 页面',
+        },
+      ],
+    },
+    {
+      collapsed: false,
       text: '通用组件',
       items: [
+        {
+          link: 'common-ui/vben-api-component',
+          text: 'ApiComponent Api组件包装器',
+        },
         {
           link: 'common-ui/vben-modal',
           text: 'Modal 模态框',
@@ -165,8 +181,16 @@ function sidebarComponents(): DefaultTheme.SidebarItem[] {
           text: 'Form 表单',
         },
         {
+          link: 'common-ui/vben-vxe-table',
+          text: 'Vxe Table 表格',
+        },
+        {
           link: 'common-ui/vben-count-to-animator',
           text: 'CountToAnimator 数字动画',
+        },
+        {
+          link: 'common-ui/vben-ellipsis-text',
+          text: 'EllipsisText 省略文本',
         },
       ],
     },
@@ -262,7 +286,7 @@ function nav(): DefaultTheme.NavItem[] {
     },
     {
       link: '/commercial/community',
-      text: '👨‍👦‍👦 社区',
+      text: '👨‍👦‍👦 交流群',
       // items: [
       //   {
       //     link: 'https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&appChannel=share&inviteCode=22ySzj7pKiw&businessType=9&from=246610&biz=ka&mainSourceId=share&subSourceId=others&jumpsource=shorturl#/pc',
@@ -278,10 +302,10 @@ function nav(): DefaultTheme.NavItem[] {
       //   },
       // ],
     },
-    {
-      link: '/friend-links/',
-      text: '🤝 友情链接',
-    },
+    // {
+    //   link: '/friend-links/',
+    //   text: '🤝 友情链接',
+    // },
   ];
 }
 

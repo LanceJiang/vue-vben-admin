@@ -12,7 +12,7 @@ outline: deep
 
 ```bash
 apps/web-ele
-apps/web-native
+apps/web-naive
 
 ```
 
@@ -72,7 +72,7 @@ pnpm install
 
 ## 其他
 
-如果你想更进一步精简，你可以删除参考一下文件或者文件夹的作用，判断自己是否需要，不需要删除即可：
+如果你想更进一步精简，你可以删除参考以下文件或者文件夹的作用，判断自己是否需要，不需要删除即可：
 
 - `.changeset` 文件夹用于管理版本变更
 - `.github` 文件夹用于存放 GitHub 的配置文件

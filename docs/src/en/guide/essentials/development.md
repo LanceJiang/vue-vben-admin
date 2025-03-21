@@ -95,7 +95,7 @@ The execution command is: `pnpm run [script]` or `npm run [script]`.
     // Lint code
     "lint": "vsh lint",
     // After installing dependencies, execute the stub script for all packages
-    "postinstall": "turbo run stub",
+    "postinstall": "pnpm -r run stub --if-present",
     // Only allow using pnpm
     "preinstall": "npx only-allow pnpm",
     // Install husky
@@ -149,6 +149,12 @@ To run the `docs` application:
 ```bash
 pnpm dev:docs
 ```
+
+## Public Static Resources
+
+If you need to use public static resources in the project, such as images, static HTML, etc., and you want to directly import them in the development process through `src="/xxx.png"`.
+
+You need to put the resource in the corresponding project's `public/static` directory. The import path for the resource should be `src="/static/xxx.png"`.
 
 ## DevTools
 
